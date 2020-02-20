@@ -1,0 +1,17 @@
+@font-face {
+    font-family: CircularStd;
+    src: url("../font/CircularStd-Book.ttf");
+}
+@font-face {
+    font-family: CircularStd;
+    src: url("../font/CircularStd-Medium.ttf");
+    font-weight: 500;
+}@font-face {
+    font-family: CircularStd;
+    src: url("../font/CircularStd-Bold.ttf");
+    font-weight: 700;
+}@font-face {
+    font-family: CircularStd;
+    src: url("../font/CircularStd-Black.ttf");
+    font-weight: 900;
+}
