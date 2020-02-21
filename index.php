@@ -26,3 +26,5 @@
     </div>
 </body>
 </html>
+<?php
+require_once "./php/init.php";
