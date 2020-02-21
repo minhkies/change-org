@@ -91,3 +91,11 @@ body{
     color: #EF1A10;
 }
 
+.posts-container{
+    margin: 0 25vw;
+}
+
+.post-container-header{
+    margin: 100px 0;
+}
+
