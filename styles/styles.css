@@ -29,13 +29,13 @@ body{
 }
 
 .logo-container{
-    width: 8vw;
-    height: auto
+    height: 3vh;
+    width: auto;
 }
 
 .logo-container img{
     object-fit: contain;
-    width: 100%;
+    height: 100%;
 }
 
 .hero{
@@ -60,6 +60,11 @@ body{
     font-weight: 700;
 }
 
+.mid-text{
+    font-size: 18pt;
+    font-weight: 700;
+}
+
 .btn-hero{
     border: solid 1px #F42E27;
     border-radius: 10px;
@@ -80,6 +85,9 @@ body{
 
 .btn-hero:hover p{
     color: white;
-    font-weight: 700;
+}
+
+.star{
+    color: #EF1A10;
 }
 
