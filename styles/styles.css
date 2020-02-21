@@ -44,12 +44,15 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url('../img/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .hero-content-container{
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 7vh;
+    grid-gap: 10vh;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -72,6 +75,7 @@ body{
     width: 200px;
     align-self: center;
     justify-self: center;
+    background-color: #ffffff;
 }
 
 .btn-hero p {

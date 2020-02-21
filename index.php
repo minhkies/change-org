@@ -23,6 +23,11 @@
                 </div>
             </div>
         </div>
+        <!-- Content under Hero image -->
+        <div class="about">
+        
+        </div>
+
     </div>
 </body>
 </html>
