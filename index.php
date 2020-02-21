@@ -5,7 +5,7 @@
     <title>change.org News</title>
     <link href="styles/styles.css" rel="stylesheet" type="text/css">
 </head>
-<body>
+<body onload="getAllPost()">
     <div class="container">
         <div class="nav">
             <div class="logo-container">
@@ -23,7 +23,9 @@
                 </div>
             </div>
         </div>
+        <div class="posts-container"></div>
     </div>
+<script src="./js/getPosts.js" type="application/javascript"></script>
 </body>
 </html>
 <?php
