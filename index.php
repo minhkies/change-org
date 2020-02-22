@@ -24,10 +24,6 @@
                 </div>
             </div>
         </div>
-        <!-- Content under Hero image -->
-
-
-        
     </div>
 </body>
 </html>
