@@ -9,12 +9,13 @@
     <div class="container">
         <div class="nav">
             <div class="logo-container">
-                <img src="./img/logo.png" alt=""Logo/>
+                <img src="./img/logo.png" alt="Logo"/>
             </div>
             <div class="nav-container">
                 <p class="btn-login">Login</p>
             </div>
         </div>
+
         <div class="hero">
             <div class="hero-content-container">
                 <p class="txt-hero large-text">The World’s Platform for Change</p>
@@ -24,10 +25,9 @@
             </div>
         </div>
         <!-- Content under Hero image -->
-        <div class="about">
-        
-        </div>
 
+
+        
     </div>
 </body>
 </html>
