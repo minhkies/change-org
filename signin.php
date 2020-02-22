@@ -9,7 +9,12 @@
 <div class="popup_container">
     <div class="popup">
         <div class="left">
-        <img src="./img/logo2.png" alt="Logo 2" class="small_logo"/>
+        <!-- <img src="./img/white_logo.png" alt="Logo 2" class="small_logo"/> -->
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <lottie-player
+            src="https://assets6.lottiefiles.com/datafiles/wW9k6ALg5Mn9cIj/data.json"  background="transparent"  speed="1"  style="width: 100%; height:100%;"  loop autoplay >
+        </lottie-player>
+        <p class="white">Changing the world</p>
         </div>
 
         <div class="right">
@@ -18,8 +23,8 @@
                 <input type="text" name="email" placeholder="email@host.com">
                 <p class="input_title">Password</p>
                 <input type="password" name="password">
-                <input type="submit" name="submit" value="Login ">
             </form>
+           <button class="login">Login</button>
         </div>
 
     </div>

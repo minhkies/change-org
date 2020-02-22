@@ -22,19 +22,25 @@
 
 .left{
     flex:1;
-    background-color:rgb(255, 255, 255);
+    background-color:rgb(255, 0, 0);
     height:100%;
     display:flex;
     justify-content:center;
     align-items:center;
+    flex-direction:column;
+    /* background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover; */
     /* box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.26); */
 }
 
+.white{
+    color:#ffffff;
+    font-family: CircularStd;
+    font-size:15px;
 
-.small_logo {
-    height: 8vh;
-    width: auto;
 }
+
 
 .right{
     flex:1;
@@ -42,6 +48,8 @@
     display:flex;
     justify-content:center;
     align-items:center;
+    flex-direction: column;
+    padding:10px;
 }
 
 .input_title{
@@ -58,3 +66,13 @@
 
 
 
+.login {
+    background-color:#F42E27;
+    width:255px;
+    margin-top:20px;
+    height:40px;
+    border-radius:5px;
+    color: #FFFFFF;
+    font-family: CircularStd;
+    font-size:15px;
+}
