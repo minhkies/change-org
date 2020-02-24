@@ -7,6 +7,11 @@ body{
     font-family: CircularStd, Sans-serif;
 }
 
+h2{
+    font-family: CircularStd, Sans-serif;
+    text-align:center;
+}
+
 .container{
     display: flex;
     flex-direction: column;
@@ -106,6 +111,7 @@ box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
 justify-content: center;
 align-items: center;
 text-align: center;
+padding:30px;
 }
 
 .about_icon{
@@ -113,6 +119,13 @@ text-align: center;
     display:flex;
     flex-direction: column;
 }
+
+.about_header{
+    color:#F42E27;
+    font-family: CircularStd, Sans-serif;
+    font-size: 15px;
+}
+
 
 .icon_titles{
     font-family: CircularStd, Sans-serif;
@@ -132,14 +145,24 @@ text-align: center;
 
   @media screen and (max-width: 2000px) {
     .icon_text{
-        padding:50px;
-        background-color:blue;
+        padding:70px;
+
     }
   }
 
   @media screen and (max-width: 1800px) {
     .icon_text{
-        padding:20px;
-        background-color:pink;
+        padding:30px;
+
     }
+  }
+
+  .posts_container{
+      width:100vw;
+      height:100vh;
+      padding:50px;
+      justify-content: center;
+      text-align:center;
+      align-items: center;
+
   }

@@ -48,9 +48,10 @@
         </div>
 
 
+        <div class="posts_container">
+            <h2>Latest Petitions</h2>
 
-
-
+        </div>
 
     </div>
 </body>
