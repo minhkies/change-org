@@ -97,3 +97,49 @@ body{
 
 
 /* //// */
+.about_container{
+display:flex;
+width:100vw;
+height:300px;
+background-color: #ffffff;
+box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+.about_icon{
+    flex:1;
+    display:flex;
+    flex-direction: column;
+}
+
+.icon_titles{
+    font-family: CircularStd, Sans-serif;
+    font-weight:500;
+    font-size: 18px;
+    margin-top:20px;
+}
+
+.icon_text{
+    font-family: CircularStd, Sans-serif;
+    font-size: 15px;
+    padding:20px;
+    text-align:left;
+}
+
+/* On screens that are */
+
+  @media screen and (max-width: 2000px) {
+    .icon_text{
+        padding:50px;
+        background-color:blue;
+    }
+  }
+
+  @media screen and (max-width: 1800px) {
+    .icon_text{
+        padding:20px;
+        background-color:pink;
+    }
+  }
