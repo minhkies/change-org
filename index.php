@@ -24,14 +24,6 @@
                 </div>
             </div>
         </div>
-
-
-        <div class="about">
-
-        </div>
-
-
     </div>
-
 </body>
 </html>
