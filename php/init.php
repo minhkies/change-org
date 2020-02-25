@@ -14,7 +14,6 @@ if ($connection->query($sql) === TRUE) {
 }
 
 // Connect to database
-
 $connection = new mysqli('localhost', 'root', '', 'change_org');
 if ($connection->connect_error) {
     die("Connection failed: " . $connection->connect_error);
@@ -40,12 +39,13 @@ pid int NOT NULL AUTO_INCREMENT PRIMARY KEY,
 uid VARCHAR(100),
 title TEXT,
 goal FLOAT,
-current_amount FLOAT,
+current_amount FLOAT DEFAULT 0,
 problem LONGTEXT,
 img TEXT,
 base VARCHAR(50),
 created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-recipient TEXT
+recipient TEXT,
+deleted boolean DEFAULT false                
 )";
 
 if ($connection->query($sql) === TRUE) {

@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <title>change.org News</title>
     <link href="styles/styles.css" rel="stylesheet" type="text/css">
+    <link href="styles/post.css" rel="stylesheet" type="text/css">
 </head>
-<body>
+<body onload="getAllPost()">
     <div class="container">
         <div class="nav">
             <div class="logo-container">
@@ -19,11 +20,16 @@
             <div class="hero-content-container">
                 <p class="txt-hero large-text">The World’s Platform for Change</p>
                 <div class="btn-hero">
-                    <p>Start a Petition</p>
+                    <p>Start a Fundraiser</p>
                 </div>
             </div>
         </div>
+        <div class="posts-container">
+            <p class="post-container-header mid-text">Latest Posts</p>
+        </div>
     </div>
+<script src="./js/getPosts.js" type="application/javascript"></script>
+    <script src="./js/post.js" type="application/javascript"></script>
 </body>
 </html>
 <?php
