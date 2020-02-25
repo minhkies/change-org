@@ -48,12 +48,26 @@ function getAllPost() {
                             post += "<div class='problem-container'>";
                                 post += "<p class='problem'>"+decodeURIComponent(o.problem)+"</p>";
                             post += "</div>";
+                            post += "<div class='donation-container'>";
+                                post += "<p class='mid-text'>Support this fundraiser</p>";
+                                post += "<div class='cc-container'>";
+                                    post += "<input type='text' class='name' name='name' placeholder='Name on Card'>";
+                                    post += "<input type='text' class='cc-number' name='cCNumber' maxlength='19' placeholder='Credit Card Number' oninput='cardNumber("+i+")'>";
+                                    post += "<input type='text' class='email' name='email' placeholder='Email'>";
+                                    post += "<input type='text' class='exp' name='exp' maxlength='5' placeholder='Expiry Date (MM/YY)' oninput='expDate("+i+")'>";
+                                    post += "<input type='text' class='address' name='address' placeholder='Address'>";
+                                    post += "<input type='text' maxlength='4' class='cvv' name='cvv' placeholder='CVV'>";
+                                    post += "<input type='text' class='amount' name='amount' placeholder='Amount' oninput='donateAmount("+i+")' onblur='checkGoal("+i+")' onfocus='addDollar("+i+")'>";
+                                    post += "<input type='submit' value='Submit' name='add-donation' class='cc-submit-btn' onclick='checkInp("+i+")'>";
+                                post += "</div>";
+                                post += "<p class='card-error'></p>";
+                            post += "</div>";
                         post += "</div>";
                     post += "<div class='btn-collapse'><p class='txt-btn-collapse' onclick='changeSize("+decodeURIComponent(o.pid)+", true)'>Read More</p></div>";
-                    post += "</div>";
+                    post += "</div>"
                 post += "</div>";
 
-                document.querySelector(".posts-container").innerHTML += post;
+                document.querySelector(".posts-container").innerHTML += post
                 document.querySelectorAll(".cover-img")[i].style.backgroundImage = "url('"+decodeURIComponent(o.img)+"')";
                 document.querySelectorAll(".current-bar")[i].style.width = parseFloat(decodeURIComponent(o.current_amount))/parseFloat(decodeURIComponent(o.goal))*35 + "vw";
                 if (parseFloat(decodeURIComponent(o.current_amount)) !== 0){

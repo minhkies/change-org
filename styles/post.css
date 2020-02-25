@@ -128,3 +128,35 @@
     text-align: right;
     margin: 30px 0;
 }
+
+.donation-container{
+    margin-top: 50px;
+}
+
+.cc-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 20px;
+}
+
+.cc-container input{
+    background: #FFFFFF;
+    border: 1px solid #6B6B6B;
+    border-radius: 5px;
+    line-height: 50px;
+    font-family: CircularStd, sans-serif;
+    padding-left: 20px;
+}
+
+.cc-container input:focus{
+    border: 2px solid #6B6B6B;
+    outline: none;
+}
+
+.cc-submit-btn{
+    border: 2px solid #EC1D17 !important;
+    color: #EC1D17;
+    font-weight: 700;
+    padding-left: 0 !important;
+}
