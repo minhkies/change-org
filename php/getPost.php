@@ -4,7 +4,7 @@ require "./connection.php";
 
 global $connection;
 
-$sql = "SELECT * FROM posts";
+$sql = "SELECT * FROM posts ORDER BY pid DESC";
 
 $data = $connection->query($sql);
 $posts = array();
