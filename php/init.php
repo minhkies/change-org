@@ -5,7 +5,7 @@ $connection = new mysqli('localhost', 'root', 'root');
 if ($connection->connect_error) {
     die("Connection failed: " . $connection->connect_error);
 }
-
+ 
 // Create database
 $sql = "CREATE DATABASE IF NOT EXISTS change_org";
 if ($connection->query($sql) === TRUE) {
