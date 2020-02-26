@@ -38,6 +38,11 @@ body{
     height: 100%;
 }
 
+.btn-login:hover{
+    color:red;
+    cursor: pointer;
+}
+
 .create-large-text{
     font-size: 40pt;
     font-weight: 200;
@@ -51,7 +56,7 @@ body{
     height: 70vh;
     background-color: rgb(255, 255, 255);
     display: flex;
-    padding:20px;
+    padding:40px 20px 20px 20px;;
     align-items: center;
 }
 
@@ -61,7 +66,7 @@ body{
     font-weight: 200;
     color: #000000;
     text-align: left;
-    width:80%;
+    width:85%;
 }
 
 .hero-content-container{
@@ -70,7 +75,6 @@ body{
     width:100vw;
     height:100%;
 }
-
 
 .left-hero{
     flex:1;
@@ -91,7 +95,7 @@ body{
     width:4px;
     height:4.5em;
     background-color:#F42E27;
-    margin-right:2em;
+    margin-right:1.5em;
 }
 
 .txt-desc-container{
@@ -101,9 +105,9 @@ body{
 }
 
 .txt-desc{
-    width:50%;
     font-size:18px;
     font-weight:300;
+    width:80%;
 }
 
 .mid-text{
@@ -140,6 +144,42 @@ body{
 
 /* ///////////////////////// */
 
+/* ABOUT CONTAIENR */
+
+.about-container {
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items: center;
+    background-color: #ffffff;
+    height:50vh;
+    width:100vw;
+}
+
+.about-icon-container{
+    display:flex;
+    flex-direction:row;
+    padding:20px;
+}
+
+.about-icon{
+    flex:1;
+    background-color: green;
+    margin:1em;
+    padding:1em;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+}
+
+
+.red-icons{
+    padding:1em;
+}
+
+
+/* END OF ABOUT CONTAINER */
 
 
 .posts-container{

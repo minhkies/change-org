@@ -42,14 +42,32 @@
             </div>
         </div>
 
+        https://assets4.lottiefiles.com/private_files/lf30_m1cNvO.json
+
 <!-- ////// END OF HERO IMAGE //////// -->
-
-
 
 <!-- ABOUT THE COMPANY SECTION -->
 
     <div class="about-container">
+        <p class="mid-text">Who uses Change.org?</p>
 
+        <div class="about-icon-container">
+
+            <div class="about-icon">
+            <img src="./img/organization.svg" alt="organizations" class="red-icons"/>
+                hi
+            </div>
+
+            <div class="about-icon">
+            <img src="./img/people.svg" alt="people" class="red-icons"/>
+                hi
+            </div>
+
+            <div class="about-icon">
+            <img src="./img/media.svg" alt="media" class="red-icons"/>
+                hi
+            </div>
+        </div>
 
 
     </div>
