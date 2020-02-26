@@ -17,7 +17,7 @@
             </div>
         </div>
         <header class="header">
-            <p class="large-text">Start a Fundraiser</p>
+            <p class="create-large-text">Start a Fundraiser</p>
             <p>Let’s make a difference and share our stories!</p>
         </header>
         <main>

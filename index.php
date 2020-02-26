@@ -45,6 +45,22 @@
 <!-- ////// END OF HERO IMAGE //////// -->
 
 
+
+<!-- ABOUT THE COMPANY SECTION -->
+
+    <div class="about-container">
+
+
+
+    </div>
+
+<!-- ////// END OF COMPANY SECTION //////// -->
+
+
+
+
+
+
         <div class="posts-container">
             <p class="post-container-header mid-text">Latest Posts</p>
         </div>
