@@ -39,8 +39,8 @@ body{
 }
 
 .hero{
-    height: 50vh;
-    background-color: white;
+    height: 70vh;
+    background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,14 +50,14 @@ body{
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 7vh;
-    justify-content: center;
-    align-items: center;
+ 
     text-align: center;
 }
 
 .large-text{
-    font-size: 24pt;
-    font-weight: 700;
+    font-size: 35pt;
+    font-weight: 500;
+    color: #000000;
 }
 
 .mid-text{
@@ -98,4 +98,8 @@ body{
 .post-container-header{
     margin: 100px 0;
 }
+
+
+
+/* test */
 

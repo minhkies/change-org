@@ -30,6 +30,7 @@
     </div>
 <script src="./js/getPosts.js" type="application/javascript"></script>
     <script src="./js/post.js" type="application/javascript"></script>
+
 </body>
 </html>
 <?php
