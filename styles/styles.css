@@ -76,6 +76,19 @@ body{
     height:100%;
 }
 
+
+@media only screen and (max-width: 800px) {
+    .hero-content-container {
+      flex-direction:column;
+    }
+
+    .right-hero{
+        display:none;
+        
+
+    }
+  }
+
 .left-hero{
     flex:1;
     display:flex;
@@ -144,6 +157,8 @@ body{
 
 /* ///////////////////////// */
 
+
+
 /* ABOUT CONTAIENR */
 
 .about-container {
@@ -164,8 +179,7 @@ body{
 
 .about-icon{
     flex:1;
-    background-color: green;
-    margin:1em;
+    margin:1em 4em 0em 4em;
     padding:1em;
     flex-direction:column;
     justify-content: center;
@@ -173,15 +187,39 @@ body{
     display:flex;
 }
 
-
 .red-icons{
     padding:1em;
+    width:8vw;
+    height:8vh;
+}
+
+
+.red-title{
+
 }
 
 
 /* END OF ABOUT CONTAINER */
 
+/* VICTORIES AND ANIMATION SECTION */
+.victories-container{
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items: center;
+    background-color: #ffffff;
+    height:50vh;
+    width:100vw;
+}
+.large-title{
+    font-family: CircularStd, Sans-serif;
+    font-size:50px;
+}
 
+
+/* END OF VICTORIES */
+
+/* POSTS */
 .posts-container{
     margin: 0 25vw;
 }
@@ -191,6 +229,4 @@ body{
 }
 
 
-
-/* test */
 

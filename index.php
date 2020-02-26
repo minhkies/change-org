@@ -35,16 +35,26 @@
                 </div>
 
                 <div class="right-hero">
-
-
+                    <!-- My illustration in background -->
                </div>
 
             </div>
         </div>
 
-        https://assets4.lottiefiles.com/private_files/lf30_m1cNvO.json
 
 <!-- ////// END OF HERO IMAGE //////// -->
+https://assets4.lottiefiles.com/packages/lf20_gxxiWD.json
+
+<!-- VICTORIES SECTION -->
+
+<div class="victories-container">
+    <div class="victories-content">
+        <p class="large-title"> 39,834 victories in 196 countries </p>
+    </div>
+    </div>
+
+<!-- ////// END OF VICTORY SECTION ///// -->
+
 
 <!-- ABOUT THE COMPANY SECTION -->
 
@@ -52,7 +62,6 @@
         <p class="mid-text">Who uses Change.org?</p>
 
         <div class="about-icon-container">
-
             <div class="about-icon">
             <img src="./img/organization.svg" alt="organizations" class="red-icons"/>
                 hi
@@ -69,15 +78,12 @@
             </div>
         </div>
 
-
     </div>
 
 <!-- ////// END OF COMPANY SECTION //////// -->
 
 
-
-
-
+<!-- POSTS -->
 
         <div class="posts-container">
             <p class="post-container-header mid-text">Latest Posts</p>
