@@ -41,57 +41,62 @@
             </div>
         </div>
 
-
-<!-- ////// END OF HERO IMAGE //////// -->
-https://assets4.lottiefiles.com/packages/lf20_gxxiWD.json
-
 <!-- VICTORIES SECTION -->
-
 <div class="victories-container">
     <div class="victories-content">
-        <p class="large-title"> 39,834 victories in 196 countries </p>
+        <div class="victory">
+            <p class="large-title"> 39,834 victories in 196 countries </p>
+            <p class="txt-desc" style="color:white;">People on Change.org work with decision makers to find new solutions to the big and small issues that impact their lives.</p>
+        </div>
+        <div class="victory">
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player
+                src="https://assets2.lottiefiles.com/datafiles/dDPvFVVCJF6DUtn/data.json"  background="transparent"  speed="1.5"  style="width: 450px; height: 350px;"  loop autoplay >
+            </lottie-player>
+        </div>
     </div>
-    </div>
-
-<!-- ////// END OF VICTORY SECTION ///// -->
+ </div>
 
 
 <!-- ABOUT THE COMPANY SECTION -->
-
-    <div class="about-container">
-        <p class="mid-text">Who uses Change.org?</p>
-
-        <div class="about-icon-container">
-            <div class="about-icon">
-            <img src="./img/organization.svg" alt="organizations" class="red-icons"/>
-                hi
-            </div>
-
-            <div class="about-icon">
-            <img src="./img/people.svg" alt="people" class="red-icons"/>
-                hi
-            </div>
-
-            <div class="about-icon">
-            <img src="./img/media.svg" alt="media" class="red-icons"/>
-                hi
-            </div>
+    <div class="stats-container">
+        <div class="stats-left">
         </div>
-
+        <div class="stats-right">
+            <p class="mid-text">338,334,218 people taking action</p>
+            <p class="txt-desc">On Change.org, people connect across geographic and cultural borders to support causes they care about. Every campaign you see on the platform is started by our users. People and organisations around the world use Change.org to start campaigns, mobilize supporters, and work with decision makers to drive solutions.</p>
+        </div>
     </div>
 
-<!-- ////// END OF COMPANY SECTION //////// -->
+<!-- ABOUT COMPANY SECTION -->
+<div class="about-container">
+    <p class="mid-text"> Our Values </p>
+
+    <div class="about-container-content">
+        <div class="about-card">We demand excellence.</div>
+        <div class="about-card">We think big.</div>
+        <div class="about-card">We offer solutions.</div>
+    </div>
+
+
+</div>
+
 
 
 <!-- POSTS -->
 
         <div class="posts-container">
-            <p class="post-container-header mid-text">Latest Posts</p>
+            <p class="post-container-header mid-text">Latest Fundraisers</p>
         </div>
     </div>
 <script src="./js/getPosts.js" type="application/javascript"></script>
     <script src="./js/post.js" type="application/javascript"></script>
 
+
+
+<footer>
+    hi
+</footer>
 </body>
 </html>
 <?php
