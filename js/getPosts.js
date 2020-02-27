@@ -6,16 +6,16 @@ function getAllPost() {
     ajax.onreadystatechange = function() {
         if (ajax.readyState == 4 && ajax.status == 200) {
             let data = JSON.parse(this.responseText);
-            console.log(data);
-
+            let donateCount = 0;
             data.map((o, i) => {
+                console.log("haha", decodeURIComponent(o.current_amount));
                 let post = "";
                 post += "<div class='post'>";
                     post += "<div class='cover-img'>";
                         post += "<div class='base-container'>";
                             post += "<img src='./img/" + o.base + ".svg' alt='Base'/>";
                         post += "</div>";
-                        post += "<div class='del-container'>";
+                        post += "<div class='del-container' onclick='deletePost("+decodeURIComponent(o.pid)+","+ decodeURIComponent(o.uid)+")'>";
                             post += "<img src='./img/close.svg' alt='x'/>";
                         post += "</div>";
                     post += "</div>";
@@ -33,11 +33,12 @@ function getAllPost() {
                                         post += "<div>";
                                             post += "<p class='txt-zero'>$0.00</p>";
                                         post += "</div>";
-
-                                        if (parseFloat(decodeURIComponent(o.current_amount))!== 0){
+                                        if (o.current_amount !== null){
                                             post += "<div>";
                                             post += "<p class='txt-current'>$"+decodeURIComponent(o.current_amount).replace(/\B(?=(\d{3})+(?!\d))/g, ",")+"</p>";
                                             post += "</div>"
+                                        } else {
+                                            donateCount++;
                                         }
                                              post += "<div>";
                                             post += "<p class='txt-total'>$"+decodeURIComponent(o.goal).replace(/\B(?=(\d{3})+(?!\d))/g, ",")+"</p>";
@@ -69,9 +70,9 @@ function getAllPost() {
 
                 document.querySelector(".posts-container").innerHTML += post;
                 document.querySelectorAll(".cover-img")[i].style.backgroundImage = "url('"+decodeURIComponent(o.img)+"')";
-                document.querySelectorAll(".current-bar")[i].style.width = parseFloat(decodeURIComponent(o.current_amount))/parseFloat(decodeURIComponent(o.goal))*35 + "vw";
-                if (parseFloat(decodeURIComponent(o.current_amount)) !== 0){
-                    document.querySelectorAll(".number-container")[i].style.gridTemplateColumns = "calc("+parseFloat(decodeURIComponent(o.current_amount))/parseFloat(decodeURIComponent(o.goal))*35+"vw - "  + (document.querySelectorAll(".txt-current")[i].clientWidth)/2 + "px) auto 1fr";
+                document.querySelectorAll(".current-bar")[i].style.width = (o.current_amount!==null)?parseFloat(decodeURIComponent(o.current_amount))/parseFloat(decodeURIComponent(o.goal))*35 + "vw":0;
+                if (o.current_amount!==null){
+                    document.querySelectorAll(".number-container")[i].style.gridTemplateColumns = "calc("+parseFloat(decodeURIComponent(o.current_amount))/parseFloat(decodeURIComponent(o.goal))*35+"vw - "  + (document.querySelectorAll(".txt-current")[i-donateCount].clientWidth)/2 + "px) auto 1fr";
                 } else {
                     document.querySelectorAll(".number-container")[i].style.gridTemplateColumns = "repeat(2, 1fr)"
                 }
