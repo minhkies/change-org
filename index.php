@@ -13,9 +13,30 @@
                 <img src="./img/logo.png" alt=""Logo/>
             </div>
             <div class="nav-container">
-                <p class="btn-login">Login</p>
+                <p id="login-btn" class="btn-login ">Login</p>
             </div>
         </div>
+
+<!-- The Modal -->
+<div id="open-signin" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div>
+        <div>
+        </div>
+
+        <div>
+            <form>
+            </form>
+        </div>
+
+    </div>
+
+  </div>
+
+</div>
 
 
 <!--   HERO IMAGE -->
@@ -42,23 +63,23 @@
         </div>
 
 <!-- VICTORIES SECTION -->
-<div class="victories-container">
-    <div class="victories-content">
-        <div class="victory">
-            <p class="large-title"> 39,834 victories in 196 countries </p>
-            <p class="txt-desc" style="color:white;">People on Change.org work with decision makers to find new solutions to the big and small issues that impact their lives.</p>
-        </div>
-        <div class="victory">
-            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-            <lottie-player
-                src="https://assets2.lottiefiles.com/datafiles/dDPvFVVCJF6DUtn/data.json"  background="transparent"  speed="1.5"  style="width: 450px; height: 350px;"  loop autoplay >
-            </lottie-player>
+    <div class="victories-container">
+        <div class="victories-content">
+            <div class="victory">
+                <p class="large-title"> 39,834 victories in 196 countries </p>
+                <p class="txt-desc" style="color:white;">People on Change.org work with decision makers to find new solutions to the big and small issues that impact their lives.</p>
+            </div>
+            <div class="victory">
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player
+                    src="https://assets2.lottiefiles.com/datafiles/dDPvFVVCJF6DUtn/data.json"  background="transparent"  speed="1.5"  style="width: 500px; height: 350px;"  loop autoplay >
+                </lottie-player>
+            </div>
         </div>
     </div>
- </div>
 
 
-<!-- ABOUT THE COMPANY SECTION -->
+<!-- STATS SECTION -->
     <div class="stats-container">
         <div class="stats-left">
         </div>
@@ -67,36 +88,74 @@
             <p class="txt-desc">On Change.org, people connect across geographic and cultural borders to support causes they care about. Every campaign you see on the platform is started by our users. People and organisations around the world use Change.org to start campaigns, mobilize supporters, and work with decision makers to drive solutions.</p>
         </div>
     </div>
-
+    
 <!-- ABOUT COMPANY SECTION -->
-<div class="about-container">
-    <p class="mid-text"> Our Values </p>
+    <div class="about-container">
+        <p class="mid-text"> Our Values </p>
 
-    <div class="about-container-content">
-        <div class="about-card">We demand excellence.</div>
-        <div class="about-card">We think big.</div>
-        <div class="about-card">We offer solutions.</div>
+        <div class="about-container-content">
+            <div class="about-card">
+            <div class="about-icon">
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                    <lottie-player
+                        src="https://assets5.lottiefiles.com/datafiles/NvSZw4XogL6CADr/data.json"  background="transparent"  speed="1"  style="width: 8vw; text-align:center;"  loop autoplay >
+                    </lottie-player> 
+            </div>   
+            <p class="mid-text">We demand excellence</p>
+            <p>To build an organisation capable of achieving great things, we aspire to be extraordinary at everything we do. We relentlessly pursue excellence in both the big and small things we do every day.</p>
+        </div>
+
+            <div class="about-card">
+                <div class="about-icon">
+                    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                    <lottie-player
+                        src="https://assets1.lottiefiles.com/packages/lf20_asj6zn.json"  background="transparent"  speed="1"  style="width: 6vw;  padding:0em; text-align:center;"  loop autoplay >
+                    </lottie-player> 
+                </div>   
+                <p class="mid-text">We think big</p>
+                <p>We believe that together with our users, we have the opportunity to change the course of history. To realise this potential we are ambitious in everything we do and audaciously optimistic about what is possible.</p>
+            </div>
+
+
+            <div class="about-card">
+                <div class="about-icon">
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player
+                    src="https://assets8.lottiefiles.com/packages/lf20_dVgSRz.json"  background="transparent"  speed="1"  style="width: 6vw;  padding:0em; text-align:center;"  loop autoplay >
+                </lottie-player> 
+                </div>   
+                <p class="mid-text">We love and understand</p>
+                <p>Loving and authentic relationships are the foundation for our work together. We care deeply for our teammates and our users, seeking to understand them and treating them with warmth and respect.</p>
+
+            </div>
+        </div>
     </div>
-
-
-</div>
 
 
 
 <!-- POSTS -->
 
-        <div class="posts-container">
+    <div class="posts-container">
             <p class="post-container-header mid-text">Latest Fundraisers</p>
-        </div>
+     </div>
     </div>
-<script src="./js/getPosts.js" type="application/javascript"></script>
+    <script src="./js/getPosts.js" type="application/javascript"></script>
     <script src="./js/post.js" type="application/javascript"></script>
 
 
 
+<!--  FOOTER  -->
 <footer>
     hi
 </footer>
+
+
+
+
+<!-- SIGN IN POPUP JS -->
+<script src="./js/popup.js"></script>
+
+
 </body>
 </html>
 <?php
