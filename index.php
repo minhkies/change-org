@@ -10,7 +10,7 @@
     <div class="container">
         <div class="nav">
             <div class="logo-container">
-                <img src="./img/logo.png" alt="logo"/>
+                <img src="./img/logo.png" alt="Logo"/>
             </div>
             <div class="nav-container">
                 <p id="login-btn" class="btn-login ">Login</p>
@@ -185,6 +185,8 @@
 
 </footer>
 
+    <script src="./js/getPosts.js" type="text/javascript"></script>
+    <script src="./js/post.js" type="text/javascript"></script>
 </body>
 </html>
 <?php

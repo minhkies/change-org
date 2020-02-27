@@ -2,6 +2,7 @@
 
 require "./connection.php";
 
+
 class Delete
 {
     private $uid;
@@ -17,7 +18,9 @@ class Delete
         global $connection;
         $sql =  "DELETE FROM posts WHERE pid='$this->pid'";
         if ($connection->query($sql) === TRUE) {
-            echo "Delete post $this->pid \.";
+            global $posts;
+            require "./getPost.php";
+            echo json_encode($posts);
         } else {
             echo "Error table: " . $connection->error;
         }
