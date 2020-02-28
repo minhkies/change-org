@@ -7,6 +7,7 @@
     <link href="styles/create-styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+
     <div class="container">
         <div class="nav">
             <div class="logo-container">
@@ -21,12 +22,6 @@
             <p>Let’s make a difference and share our stories!</p>
         </header>
         <main>
-
-        <!-- POPUPs -->
-
-            <!-- confirm popup -->
-          
-        <!-- END OF POPUP -->
 
             <p class="mid-text">What kind of Issue are you petitioning on?<span class="star"> *</span></p>
             <div class="category-container">

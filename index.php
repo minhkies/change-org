@@ -154,19 +154,32 @@
 
 
 <footer>
-    <h3>Lets make a change</h3>
 <div class="footer-content-container">
     <div class="footer-content">
-        <p>yo</p>
-        <p>yo</p>
-    </div>
-    <div>
-    <p>yo</p>
-    <p>yo</p>
-    </div>
-    <div>
-    <p>yo</p>
-    <p>yo</p>
+        <div class="footer-content-items">
+        <p class="footer-title">About Us</p>
+        <p class="f-items">History</p>
+        <p class="f-items">Values</p>
+        <p class="f-items">Success Stories</p>
+        </div>
+        <div class="footer-content-items">
+        <p class="footer-title">Careers</p>
+        <p class="f-items">Who We Are</p>
+        <p class="f-items">Opportunities</p>
+        <p class="f-items">Job postings</p>
+        </div>
+        <div class="footer-content-items">
+        <p class="footer-title">Social</p>
+        <p class="f-items">Facebook</p>
+        <p class="f-items">Instagram</p>
+        <p class="f-items">Twitter</p>
+        </div>
+        <div class="footer-content-items">
+        <p class="footer-title">Contact</p>
+        <p class="f-items">1443 65B Ave</p>
+        <p class="f-items">changecommunity.ca</p>
+        <p class="f-items">604.553.3859</p>
+        </div>
     </div>
 </div>
 
