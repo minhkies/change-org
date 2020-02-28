@@ -10,7 +10,7 @@
     <div class="container">
         <div class="nav">
             <div class="logo-container">
-                <img src="./img/logo.png" alt=""Logo/>
+                <img src="./img/logo.png" alt="logo"/>
             </div>
             <div class="nav-container">
                 <p id="login-btn" class="btn-login ">Login</p>
@@ -19,19 +19,26 @@
 
 <!-- The Modal -->
 <div id="open-signin" class="modal">
-
   <!-- Modal content -->
   <div class="modal-content">
     <span class="close">&times;</span>
-    <div>
-        <div>
-        </div>
 
-        <div>
-            <form>
+    <div class="signin-container">
+        <div class="signin-content-left">
+        <img src="./img/login.svg" alt="sign in illustration" style="width:80%"/>
+        </div>
+        <div class="signin-content-right">
+            <h2 style="text-align:center">Login to your account</h2>
+            <form class="signin" action="" method="post">
+                    <p class="input_title">Email</p>
+                    <input type="text" name="email" placeholder="email@host.com">
+                    <p class="input_title">Password</p>
+                    <input type="password" name="password">
             </form>
+            <button class="login-button">Login</button>
+            <p style="text-align:center">Don't have an account? <span style="color:red;">Sign Up</span>
+            </p>
         </div>
-
     </div>
 
   </div>
@@ -142,19 +149,28 @@
     <script src="./js/getPosts.js" type="application/javascript"></script>
     <script src="./js/post.js" type="application/javascript"></script>
 
-
-
-<!--  FOOTER  -->
-<footer>
-    hi
-</footer>
-
-
-
-
 <!-- SIGN IN POPUP JS -->
-<script src="./js/popup.js"></script>
+<script src="./js/login-popup.js"></script>
 
+
+<footer>
+    <h3>Lets make a change</h3>
+<div class="footer-content-container">
+    <div class="footer-content">
+        <p>yo</p>
+        <p>yo</p>
+    </div>
+    <div>
+    <p>yo</p>
+    <p>yo</p>
+    </div>
+    <div>
+    <p>yo</p>
+    <p>yo</p>
+    </div>
+</div>
+
+</footer>
 
 </body>
 </html>

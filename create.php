@@ -13,7 +13,7 @@
                 <img src="./img/logo.png" alt=""Logo/>
             </div>
             <div class="nav-container">
-                <p class="btn-login">Login</p>
+                <p id="login-btn"  class="btn-login">Login</p>
             </div>
         </div>
         <header class="header">
@@ -21,6 +21,13 @@
             <p>Let’s make a difference and share our stories!</p>
         </header>
         <main>
+
+        <!-- POPUPs -->
+
+            <!-- confirm popup -->
+          
+        <!-- END OF POPUP -->
+
             <p class="mid-text">What kind of Issue are you petitioning on?<span class="star"> *</span></p>
             <div class="category-container">
                 <div class="selection-container">
