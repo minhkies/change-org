@@ -22,7 +22,7 @@ class Donation
 //        update addingValueToExisting set GameScore = GameScore+10 where Id = 4;
         $sql =  "INSERT IGNORE INTO donation (amount, pid, name, billing) VALUES ('$this->amount','$this->pid', '$this->name', '$this->billing')";
         if ($connection->query($sql) === TRUE) {
-            echo "Thanks for donating $this->amount $this->pid .";
+            echo "success";
         } else {
             echo "Error table: " . $connection->error;
         }

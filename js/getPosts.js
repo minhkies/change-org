@@ -70,7 +70,7 @@ function getAllPost() {
                 post += "</div>"
                 post += "</div>";
                 document.querySelector(".posts-container").innerHTML += post;
-                document.querySelectorAll(".cover-img")[i].style.backgroundImage = "url('"+decodeURIComponent(o.img)+"')";
+                (decodeURIComponent(o.img)!=="")?document.querySelectorAll(".cover-img")[i].style.backgroundImage = "url('"+decodeURIComponent(o.img)+"')":document.querySelectorAll(".cover-img")[i].style.backgroundImage = "url('./img/"+decodeURIComponent(o.base)+"-bg.svg')";
                 document.querySelectorAll(".current-bar")[i].style.width = (o.current_amount!==null)?parseFloat(decodeURIComponent(o.current_amount))/parseFloat(decodeURIComponent(o.goal))*35 + "vw":0;
                 if (o.current_amount!==null){
                     document.querySelectorAll(".number-container")[i].style.gridTemplateColumns = "calc("+parseFloat(decodeURIComponent(o.current_amount))/parseFloat(decodeURIComponent(o.goal))*35+"vw - "  + (document.querySelectorAll(".txt-current")[i-donateCount].clientWidth)/2 + "px) auto 1fr";
@@ -80,4 +80,4 @@ function getAllPost() {
             })
         }
     }
-};
+}
