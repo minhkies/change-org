@@ -17,7 +17,7 @@ function getAllPost() {
                 post += "<div class='base-container'>";
                 post += "<img src='./img/" + o.base + ".svg' alt='Base'/>";
                 post += "</div>";
-                post += "<div class='del-container' onclick='deletePost("+decodeURIComponent(o.pid)+","+ decodeURIComponent(o.uid)+")'>";
+                post += "<div class='del-container' onclick='deletePost("+decodeURIComponent(o.pid)+","+ decodeURIComponent(o.uid)+")' <?php session_start(); if(empty($_SESSION['username']){echo style='display: flex'} else {echo style='display: none'} ?>";
                 post += "<img src='./img/close.svg' alt='x'/>";
                 post += "</div>";
                 post += "</div>";

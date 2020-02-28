@@ -14,7 +14,13 @@
                 <img src="./img/logo.png" alt=""Logo/>
             </div>
             <div class="nav-container">
-                <p id="login-btn"  class="btn-login">Login</p>
+                <?php
+                session_start();
+                if (isset($_SESSION['username'])){
+                    echo "<p>" . $_SESSION['first_name'] . " " . $_SESSION['last_name'] . "</p>";
+                } else {
+                    echo "<p id='login-btn' class='btn-login'>Login</p>";
+                }?>
             </div>
         </div>
         <header class="header">
@@ -106,6 +112,14 @@
                 </div>
             </div>
         </main>
+        <div class="dimmer">
+            <div class="popup-container">
+                <p>Your fundraiser <br/> has been posted!</p>
+                <img src="./img/badge.svg" alt="Badge">
+                <p>Thank you for making a difference in the world <br/> and starting a conversation.</p>
+                <a class="btn-view-posts" href="./index.php" "><p>View posts</p></a>
+            </div>
+        </div>
     </div>
 <script src="./js/create.js" type="application/javascript"></script>
 </body>

@@ -18,3 +18,11 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+function openSignin() {
+  modal.style.display = "block";
+}
+
+function redirectCreate() {
+  location.href="./create.php"
+}
