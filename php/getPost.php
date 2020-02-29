@@ -4,7 +4,8 @@ require "./connection.php";
 
 global $connection;
 
-$sql = "SELECT * FROM posts ORDER BY pid DESC";
+$sql = "SELECT posts.pid, uid, title, goal, problem, img, base, posts.created_at, recipient, deleted, SUM(donation.amount) AS current_amount FROM posts LEFT JOIN donation ON posts.pid = donation.pid WHERE posts.deleted = 0 GROUP BY posts.pid ORDER BY pid DESC;";
+
 
 $data = $connection->query($sql);
 $posts = array();

@@ -7,20 +7,28 @@
     <link href="styles/create-styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+
     <div class="container">
         <div class="nav">
             <div class="logo-container">
                 <img src="./img/logo.png" alt=""Logo/>
             </div>
             <div class="nav-container">
-                <p class="btn-login">Login</p>
+                <?php
+                session_start();
+                if (isset($_SESSION['username'])){
+                    echo "<p>" . $_SESSION['first_name'] . " " . $_SESSION['last_name'] . "</p>";
+                } else {
+                    echo "<p id='login-btn' class='btn-login'>Login</p>";
+                }?>
             </div>
         </div>
         <header class="header">
-            <p class="large-text">Start a Fundraiser</p>
+            <p class="create-large-text">Start a Fundraiser</p>
             <p>Let’s make a difference and share our stories!</p>
         </header>
         <main>
+
             <p class="mid-text">What kind of Issue are you petitioning on?<span class="star"> *</span></p>
             <div class="category-container">
                 <div class="selection-container">
@@ -104,6 +112,14 @@
                 </div>
             </div>
         </main>
+        <div class="dimmer">
+            <div class="popup-container">
+                <p>Your fundraiser <br/> has been posted!</p>
+                <img src="./img/badge.svg" alt="Badge">
+                <p>Thank you for making a difference in the world <br/> and starting a conversation.</p>
+                <a class="btn-view-posts" href="./index.php" "><p>View posts</p></a>
+            </div>
+        </div>
     </div>
 <script src="./js/create.js" type="application/javascript"></script>
 </body>

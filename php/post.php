@@ -24,10 +24,25 @@ class post{
 
     function savePost(){
         global $connection;
-        $sql =  "INSERT IGNORE INTO posts (uid, base, title, recipient, goal, problem, img) VALUES ('$this->uid','$this->base', '$this->title', '$this->recipient', '$this->goal', '$this->problem', '$this->img')";
+        $sql =  "INSERT IGNORE INTO posts (uid, base, title, recipient, goal, problem, img) VALUES (?,?,?,?,?,?,?)";
 
-        if ($connection->query($sql) === TRUE) {
-            echo "Successfully added into the record.";
+
+        $stmt = $connection->prepare($sql);
+
+        $this->uid = htmlspecialchars(strip_tags($this->uid));
+        $this->base = htmlspecialchars(strip_tags($this->base));
+        $this->title = htmlspecialchars(strip_tags($this->title));
+        $this->recipient = htmlspecialchars(strip_tags($this->recipient));
+        $this->goal = htmlspecialchars(strip_tags($this->goal));
+        $this->problem = htmlspecialchars(strip_tags($this->problem));
+        $this->img = htmlspecialchars(strip_tags($this->img));
+
+
+        $stmt->bind_param("ssssdss", $this->uid,$this->base, $this->title, $this->recipient, $this->goal,$this->problem,$this->img);
+
+
+        if ($stmt->execute()) {
+            echo "Success";
         } else {
             echo "Error table: " . $connection->error;
         }

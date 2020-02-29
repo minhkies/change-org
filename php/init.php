@@ -33,13 +33,12 @@ if ($connection->query($sql) === TRUE) {
     echo "Error creating table: " . $connection->error;
 }
 
-// sql to create table
+// sql to create tables
 $sql = "CREATE TABLE IF NOT EXISTS posts (
 pid int NOT NULL AUTO_INCREMENT PRIMARY KEY,
 uid VARCHAR(100),
 title TEXT,
 goal FLOAT,
-current_amount FLOAT DEFAULT 0,
 problem LONGTEXT,
 img TEXT,
 base VARCHAR(50),
@@ -52,6 +51,22 @@ if ($connection->query($sql) === TRUE) {
 } else {
     echo "Error creating table: " . $connection->error;
 }
+
+
+$sql = "CREATE TABLE IF NOT EXISTS donation (
+id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+pid VARCHAR(100),
+amount FLOAT,
+name VARCHAR(100),
+billing TEXT,
+created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+)";
+
+if ($connection->query($sql) === TRUE) {
+} else {
+    echo "Error creating table: " . $connection->error;
+}
+
 $pw = password_hash('admin', PASSWORD_DEFAULT);
 
 $sql="INSERT IGNORE INTO users (username, password, first_name, last_name)
